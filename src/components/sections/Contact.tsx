@@ -53,7 +53,7 @@ export const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Phone Number
+                      Inquiry Number
                     </p>
                     <p className="text-base font-extrabold text-navy-800 group-hover:text-brand-blue transition-colors">
                       {BUSINESS_CONFIG.phone}
@@ -96,14 +96,14 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Reusable Action Buttons: Call Now, WhatsApp Us, Email Us, Book a Car */}
+            {/* Reusable Action Buttons: Call Inquiry, WhatsApp Us, Email Us, Book a Car */}
             <div className="pt-8 grid grid-cols-2 gap-3">
               <a
                 href={BUSINESS_CONFIG.phoneHref}
                 className="py-3 px-4 rounded-xl bg-navy-800 hover:bg-navy-900 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 text-center"
               >
                 <Phone className="w-4 h-4 text-brand-gold" />
-                <span>Call Now</span>
+                <span>Call Inquiry</span>
               </a>
 
               <a

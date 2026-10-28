@@ -64,16 +64,23 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right side CTAs (Desktop) */}
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden lg:flex items-center gap-4">
             <a
               href={BUSINESS_CONFIG.phoneHref}
-              className="flex items-center gap-2 text-sm font-bold text-navy-800 hover:text-brand-blue transition-colors py-1.5 px-3 rounded-lg hover:bg-slate-100"
-              aria-label={`Call Vidhit Car Rental at ${BUSINESS_CONFIG.phone}`}
+              className="flex items-center gap-2.5 text-left py-1.5 px-3 rounded-xl hover:bg-slate-100 transition-colors group"
+              aria-label={`Inquiry Number: ${BUSINESS_CONFIG.phone}`}
             >
-              <div className="w-8 h-8 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
+              <div className="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
               </div>
-              <span className="tracking-tight">{BUSINESS_CONFIG.phone}</span>
+              <div className="flex flex-col">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 leading-none">
+                  Inquiry Number
+                </span>
+                <span className="text-sm font-extrabold text-navy-800 tracking-tight group-hover:text-brand-blue transition-colors leading-tight mt-0.5">
+                  {BUSINESS_CONFIG.phone}
+                </span>
+              </div>
             </a>
 
             <button
@@ -123,10 +130,10 @@ export const Navbar: React.FC = () => {
             <div className="pt-4 mt-2 border-t border-slate-100 flex flex-col gap-3">
               <a
                 href={BUSINESS_CONFIG.phoneHref}
-                className="flex items-center justify-center gap-2 py-3 rounded-xl bg-navy-50 text-navy-800 font-bold text-sm border border-slate-200"
+                className="flex items-center justify-center gap-2 py-3 rounded-xl bg-navy-50 text-navy-800 font-bold text-sm border border-slate-200 hover:bg-brand-blue hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-brand-blue" />
-                <span>Call: {BUSINESS_CONFIG.phone}</span>
+                <span>Inquiry Number: {BUSINESS_CONFIG.phone}</span>
               </a>
             </div>
           </nav>

@@ -13,14 +13,14 @@ export const MobileActionBar: React.FC = () => {
       className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
     >
       <div className="grid grid-cols-3 gap-2">
-        {/* Call button */}
+        {/* Inquiry Call button */}
         <a
           href={BUSINESS_CONFIG.phoneHref}
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-50 active:bg-slate-100 text-navy-800 transition-colors border border-slate-200/80"
-          aria-label="Call Vidhit Car Rental"
+          aria-label={`Call Vidhit Car Rental Inquiry Number at ${BUSINESS_CONFIG.phone}`}
         >
           <Phone className="w-5 h-5 text-brand-blue" />
-          <span className="text-[11px] font-bold mt-1 tracking-wide uppercase">Call</span>
+          <span className="text-[11px] font-bold mt-1 tracking-wide uppercase">Inquiry</span>
         </a>
 
         {/* WhatsApp button */}

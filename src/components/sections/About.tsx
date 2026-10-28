@@ -10,23 +10,56 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Image & Location Showcase */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
               <img
-                src="/images/hero/hero-banner.jpg"
-                alt="Vidhit Car Rental Kolkata"
-                className="w-full h-80 sm:h-96 object-cover object-center"
+                src="/images/about/about-showroom.jpg"
+                alt="Vidhit Car Rental Showroom and Customer Office"
+                className="w-full h-80 sm:h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/25 to-transparent" />
 
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-blue mb-1">
-                  <MapPin className="w-3.5 h-3.5" />
-                  <span>Bowbazar, Kolkata – 700013</span>
+              {/* Authentic Vidhit Car Rental Logo Card */}
+              <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-md p-3 px-4 rounded-2xl shadow-lg border border-white/40 flex items-center gap-3">
+                <img
+                  src="/images/logo/vidhit-logo.png"
+                  alt="Vidhit Car Rental Official Logo"
+                  className="h-10 sm:h-12 w-auto object-contain select-none"
+                />
+              </div>
+
+              {/* Location & Inquiry Number Overlay */}
+              <div className="absolute bottom-5 left-5 right-5 p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-xl space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-blue">
+                    <MapPin className="w-3.5 h-3.5" />
+                    <span>Bowbazar, Kolkata – 700013</span>
+                  </div>
+                  <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Kolkata Verified
+                  </span>
                 </div>
-                <p className="text-sm font-extrabold text-navy-800">
-                  {BUSINESS_CONFIG.name}
-                </p>
+
+                <div className="pt-2 flex items-center justify-between border-t border-slate-100">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Inquiry Number
+                    </span>
+                    <a
+                      href={BUSINESS_CONFIG.phoneHref}
+                      className="text-sm sm:text-base font-black text-navy-850 text-[#14263D] hover:text-brand-blue transition-colors flex items-center gap-1.5"
+                    >
+                      <Phone className="w-3.5 h-3.5 text-brand-blue" />
+                      <span>{BUSINESS_CONFIG.phone}</span>
+                    </a>
+                  </div>
+                  <a
+                    href={BUSINESS_CONFIG.phoneHref}
+                    className="py-2 px-3.5 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider shadow-sm transition-colors active:scale-95"
+                  >
+                    Call Inquiry
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -46,7 +79,7 @@ export const About: React.FC = () => {
                 Vidhit Car Rental is located in Bowbazar, Kolkata, West Bengal. Customers can explore our available vehicle options, including Maruti Suzuki Dzire, Maruti Suzuki Ertiga, Maruti Suzuki WagonR, and Mahindra Scorpio.
               </p>
               <p>
-                Contact us to discuss your travel requirements, preferred vehicle, rental rates, and booking availability.
+                Contact our Bowbazar team on our direct inquiry number to discuss your travel requirements, preferred vehicle, rental rates, and booking availability.
               </p>
             </div>
 
@@ -75,10 +108,10 @@ export const About: React.FC = () => {
 
               <a
                 href={BUSINESS_CONFIG.phoneHref}
-                className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-800 font-bold text-xs uppercase tracking-wider transition-colors"
+                className="inline-flex items-center gap-2.5 py-3 px-5 rounded-xl bg-brand-blue/10 hover:bg-brand-blue/20 text-brand-blue font-bold text-xs uppercase tracking-wider transition-colors border border-brand-blue/20"
               >
                 <Phone className="w-4 h-4 text-brand-blue" />
-                <span>Call {BUSINESS_CONFIG.phone}</span>
+                <span>Inquiry Number: {BUSINESS_CONFIG.phone}</span>
               </a>
             </div>
           </div>

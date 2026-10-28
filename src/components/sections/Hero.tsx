@@ -1,6 +1,7 @@
 import React from "react";
+import { BUSINESS_CONFIG } from "../../config/business";
 import { scrollToSection } from "../../utils/contact";
-import { ArrowRight, CalendarCheck, ShieldCheck, MapPin, Car } from "lucide-react";
+import { ArrowRight, CalendarCheck, ShieldCheck, MapPin, Car, Phone } from "lucide-react";
 
 export const Hero: React.FC = () => {
   return (
@@ -33,10 +34,10 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <button
                 onClick={() => scrollToSection("fleet")}
-                className="py-3.5 px-7 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-cta hover:shadow-xl transition-all duration-300 flex items-center gap-2.5 cursor-pointer active:scale-95"
+                className="py-3.5 px-6 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-cta hover:shadow-xl transition-all duration-300 flex items-center gap-2 cursor-pointer active:scale-95"
               >
                 <span>EXPLORE OUR FLEET</span>
                 <ArrowRight className="w-4 h-4" />
@@ -44,11 +45,20 @@ export const Hero: React.FC = () => {
 
               <button
                 onClick={() => scrollToSection("booking-form")}
-                className="py-3.5 px-7 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 flex items-center gap-2.5 cursor-pointer active:scale-95"
+                className="py-3.5 px-6 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer active:scale-95"
               >
                 <CalendarCheck className="w-4 h-4 text-brand-gold" />
                 <span>BOOK A CAR</span>
               </button>
+
+              <a
+                href={BUSINESS_CONFIG.phoneHref}
+                className="py-3.5 px-5 rounded-xl bg-navy-800/90 hover:bg-navy-800 text-white border border-slate-700/80 backdrop-blur-md font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 flex items-center gap-2 active:scale-95 group shadow-md"
+                aria-label={`Call Vidhit Car Rental Inquiry Number: ${BUSINESS_CONFIG.phone}`}
+              >
+                <Phone className="w-4 h-4 text-brand-gold group-hover:rotate-12 transition-transform" />
+                <span>INQUIRY: {BUSINESS_CONFIG.phone}</span>
+              </a>
             </div>
 
             {/* Hero Highlights */}

@@ -111,9 +111,14 @@ export const Footer: React.FC<FooterProps> = ({ onSelectVehicle }) => {
                   className="flex items-start gap-3 hover:text-white transition-colors group"
                 >
                   <Phone className="w-4 h-4 text-brand-blue shrink-0 mt-0.5" />
-                  <span className="font-semibold text-white group-hover:text-brand-gold transition-colors">
-                    {BUSINESS_CONFIG.phone}
-                  </span>
+                  <div>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                      Inquiry Number
+                    </span>
+                    <span className="font-semibold text-white group-hover:text-brand-gold transition-colors">
+                      {BUSINESS_CONFIG.phone}
+                    </span>
+                  </div>
                 </a>
               </li>
               <li>

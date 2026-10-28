@@ -106,6 +106,21 @@ export const BookingForm: React.FC<BookingFormProps> = ({
           subtitle="Submit your travel requirements to enquire about vehicle rates, availability, and rental terms with Vidhit Car Rental in Bowbazar, Kolkata."
         />
 
+        {/* Quick direct inquiry banner */}
+        <div className="mb-6 p-3.5 px-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="font-semibold text-slate-700">Need immediate help? Call our official Inquiry Number:</span>
+          </div>
+          <a
+            href={BUSINESS_CONFIG.phoneHref}
+            className="inline-flex items-center gap-1.5 font-extrabold text-brand-blue hover:text-brand-blue-hover transition-colors"
+          >
+            <Phone className="w-3.5 h-3.5" />
+            <span>{BUSINESS_CONFIG.phone}</span>
+          </a>
+        </div>
+
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200/90 p-6 sm:p-10">
           {successUrl && (
             <div className="mb-8 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950">
@@ -187,7 +202,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({
                   <input
                     id="full-phone"
                     type="tel"
-                    placeholder="+91 8582944726"
+                    placeholder="+91 98765 43210"
                     {...register("phone")}
                     className={`w-full pl-10 pr-3.5 py-3 rounded-xl border text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue transition-all ${
                       errors.phone ? "border-red-400 bg-red-50/20" : "border-slate-200 bg-slate-50/40"

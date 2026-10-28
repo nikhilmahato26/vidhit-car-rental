@@ -78,11 +78,11 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({
             </a>
             <a
               href={BUSINESS_CONFIG.phoneHref}
-              aria-label={`Call Vidhit Car Rental for ${vehicle.name}`}
+              aria-label={`Call Vidhit Car Rental inquiry number for ${vehicle.name}`}
               className="py-2.5 px-3 rounded-lg bg-navy-50 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold text-xs transition-colors flex items-center justify-center gap-1.5 border border-slate-200"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>Call Us</span>
+              <span>Inquiry Call</span>
             </a>
           </div>
         </div>

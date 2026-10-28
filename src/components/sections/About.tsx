@@ -33,7 +33,7 @@ export const About: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-blue">
                     <MapPin className="w-3.5 h-3.5" />
-                    <span>Bowbazar, Kolkata – 700013</span>
+                    <span>Bowbazar, Kolkata – 700012</span>
                   </div>
                   <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
                     Kolkata Verified

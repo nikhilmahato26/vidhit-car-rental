@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-4 text-xs font-medium text-slate-300">
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-              <span>Bowbazar, Kolkata – 700013</span>
+              <span>Bowbazar, Kolkata – 700012</span>
             </span>
             <span className="text-slate-600">|</span>
             <span className="text-slate-400">Available: Dzire, Ertiga, WagonR, Scorpio</span>

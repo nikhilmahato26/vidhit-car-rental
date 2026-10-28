@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
                   <h4 className="text-sm font-bold text-white uppercase tracking-wide">
                     Located in Kolkata
                   </h4>
-                  <p className="text-xs text-slate-400">Bowbazar, 700013</p>
+                  <p className="text-xs text-slate-400">Bowbazar, 700012</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
                     Vidhit Car Rental
                   </p>
                   <p className="text-sm font-extrabold text-white">
-                    Bowbazar, Kolkata – 700013
+                    Bowbazar, Kolkata – 700012
                   </p>
                 </div>
                 <div className="shrink-0">

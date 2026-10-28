@@ -11,9 +11,9 @@ export const BUSINESS_CONFIG = {
   email: "jsrivastav640@gmail.com",
   emailHref: "mailto:jsrivastav640@gmail.com",
   location: "Bowbazar, Kolkata, West Bengal",
-  pinCode: "700013",
-  address: "Bowbazar, Kolkata, West Bengal – 700013, India",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Bowbazar,+Kolkata,+West+Bengal+700013",
+  pinCode: "700012",
+  address: "Bowbazar, Kolkata, West Bengal – 700012, India",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Bowbazar,+Kolkata,+West+Bengal+700012",
   whatsappBaseUrl: "https://wa.me/918582944726",
   copyrightYear: 2026,
 } as const;

@@ -156,7 +156,7 @@ export const Contact: React.FC = () => {
                   Visit or Search Bowbazar, Kolkata
                 </h3>
                 <p className="text-sm text-slate-300 mt-2 leading-relaxed">
-                  Vidhit Car Rental operates from Bowbazar, Kolkata (PIN: 700013), West Bengal. Customers can locate our service area on Google Maps or connect with us directly.
+                  Vidhit Car Rental operates from Bowbazar, Kolkata (PIN: 700012), West Bengal. Customers can locate our service area on Google Maps or connect with us directly.
                 </p>
               </div>
 

@@ -5,7 +5,7 @@ import { ArrowRight, CalendarCheck, ShieldCheck, MapPin, Car, Phone } from "luci
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-gradient-to-b from-navy-950 via-navy-900 to-navy-800 text-white">
+    <section id="home" className="relative pt-24 pb-16 md:pt-36 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-b from-navy-950 via-navy-900 to-navy-800 text-white">
       {/* Decorative ambient gradients */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none" />
@@ -81,9 +81,9 @@ export const Hero: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white uppercase tracking-wide">
-                    Easy Booking Enquiries
+                    Inquiry: 8582944726
                   </h4>
-                  <p className="text-xs text-slate-400">Quick WhatsApp & Phone</p>
+                  <p className="text-xs text-slate-400">Direct Phone & WhatsApp</p>
                 </div>
               </div>
 

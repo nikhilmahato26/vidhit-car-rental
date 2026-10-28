@@ -42,10 +42,16 @@ export const Navbar: React.FC = () => {
       <div className="bg-navy-950 text-slate-300 text-xs py-1.5 px-4 sm:px-6 lg:px-8 border-b border-white/10 hidden md:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 text-xs font-medium text-slate-300">
-            <span className="flex items-center gap-1.5">
+            <a
+              href={BUSINESS_CONFIG.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 hover:text-brand-gold transition-colors"
+              title="View Vidhit Car Rental on Google"
+            >
               <MapPin className="w-3.5 h-3.5 text-brand-gold" />
               <span>Bowbazar, Kolkata – 700012</span>
-            </span>
+            </a>
             <span className="text-slate-600">|</span>
             <span className="text-slate-400">Available: Dzire, Ertiga, WagonR, Scorpio</span>
           </div>

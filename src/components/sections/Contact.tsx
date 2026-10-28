@@ -186,7 +186,7 @@ export const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-brand-blue to-sky-600 hover:from-brand-blue-hover hover:to-sky-700 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg flex items-center justify-center gap-2.5 transition-all active:scale-95"
               >
-                <span>OPEN BOWBAZAR ON GOOGLE MAPS</span>
+                <span>VIEW VIDHIT CAR RENTAL ON GOOGLE</span>
                 <ExternalLink className="w-4 h-4" />
               </a>
             </div>

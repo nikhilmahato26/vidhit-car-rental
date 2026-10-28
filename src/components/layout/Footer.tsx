@@ -143,7 +143,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectVehicle }) => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-brand-blue hover:text-brand-gold transition-colors font-semibold"
                 >
-                  <span>View on Google Maps</span>
+                  <span>View on Google Profile & Maps</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>

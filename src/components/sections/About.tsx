@@ -31,10 +31,16 @@ export const About: React.FC = () => {
               {/* Location & Inquiry Number Overlay */}
               <div className="absolute bottom-5 left-5 right-5 p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-xl space-y-3">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-blue">
+                  <a
+                    href={BUSINESS_CONFIG.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-blue hover:text-brand-blue-hover hover:underline transition-colors"
+                    title="View Vidhit Car Rental on Google"
+                  >
                     <MapPin className="w-3.5 h-3.5" />
                     <span>Bowbazar, Kolkata – 700012</span>
-                  </div>
+                  </a>
                   <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
                     Kolkata Verified
                   </span>

@@ -13,7 +13,9 @@ export const BUSINESS_CONFIG = {
   location: "Bowbazar, Kolkata, West Bengal",
   pinCode: "700012",
   address: "Bowbazar, Kolkata, West Bengal – 700012, India",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Bowbazar,+Kolkata,+West+Bengal+700012",
+  googleMapsUrl: "https://share.google/6XgaeC3UTXF7Wgmlr",
+  googleBusinessUrl: "https://share.google/6XgaeC3UTXF7Wgmlr",
+  googleProfileUrl: "https://share.google/6XgaeC3UTXF7Wgmlr",
   whatsappBaseUrl: "https://wa.me/918582944726",
   copyrightYear: 2026,
 } as const;
